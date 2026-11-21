@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affan Studio | Creative Digital Design & Editing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            950: '#090d16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-emerald-400 flex items-center justify-center text-slate-950 font-extrabold text-lg shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    A
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white">Affan <span class="text-indigo-400">Studio</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-white transition-colors">Services & Rates</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Samples</a>
+                <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-3">
+                <button onclick="orderOnWhatsApp('Custom Order', 'As Selected')" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold shadow-lg shadow-indigo-600/25 transition-all active:scale-95 cursor-pointer">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-28">
+        <!-- Subtle Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-72 bg-indigo-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 right-10 w-64 h-64 bg-emerald-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Status Badge -->
+            <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs sm:text-sm font-medium text-emerald-400 mb-6 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Open 12 Hours Daily • Fast Delivery by Affan
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                Scroll-Stopping Designs for <br class="hidden sm:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-emerald-400">
+                    Creators & Growing Brands
+                </span>
+            </h1>
+
+            <!-- Tagline (English + Roman Urdu friendly tone) -->
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed mb-9">
+                Hi, I'm <strong class="text-slate-200">Affan</strong>! Apne YouTube channel, Instagram page, ya study projects ko professional look dein—high-quality thumbnails, social media posts, aur clean logos ke saath, pocket-friendly rates mein.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="orderOnWhatsApp('New Project Inquiry', 'PKR Packages')" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white font-semibold text-base shadow-xl shadow-indigo-600/25 flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    Order Now (+92 336 0329814)
+                </button>
+                <a href="#portfolio" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-base flex items-center justify-center gap-2 transition-all">
+                    <i data-lucide="eye" class="w-5 h-5 text-emerald-400"></i>
+                    View Sample Work
+                </a>
+            </div>
+
+            <!-- Trust Highlights -->
+            <div class="mt-12 pt-8 border-t border-slate-800/70 grid grid-cols-3 gap-4 max-w-xl mx-auto text-center">
+                <div>
+                    <div class="text-xl sm:text-2xl font-bold text-white">12 Hrs Daily</div>
+                    <div class="text-xs text-slate-400 mt-0.5">Active Availability</div>
+                </div>
+                <div>
+                    <div class="text-xl sm:text-2xl font-bold text-emerald-400">Rs. 500+</div>
+                    <div class="text-xs text-slate-400 mt-0.5">Budget Packages</div>
+                </div>
+                <div>
+                    <div class="text-xl sm:text-2xl font-bold text-indigo-400">Preview First</div>
+                    <div class="text-xs text-slate-400 mt-0.5">Safe Sample Proof</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES & PRICING SECTION ==================== -->
+    <section id="services" class="py-16 sm:py-24 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Services & PKR Pricing</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Simple, Clear Packages</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Apna package chunein aur seedha WhatsApp par order bhejein. Hum rozana <strong class="text-slate-200">12 hours</strong> active rehte hain.
+                </p>
+            </div>
+
+            <!-- 4 Pricing Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Package 1: YouTube Thumbnail -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all shadow-lg">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-4">
+                            <i data-lucide="youtube" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">YouTube Thumbnail</h3>
+                        <p class="text-slate-400 text-xs mt-1.5">High-CTR thumbnail jo aapki video par zyada clicks laye.</p>
+                        
+                        <div class="my-5 pb-5 border-b border-slate-800">
+                            <span class="text-3xl font-extrabold text-white">Rs. 500</span>
+                            <span class="text-slate-400 text-xs"> / design</span>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                HD 1920x1080 Resolution
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Bold Text & Color Pop
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Preview Sample Before Payment
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="orderOnWhatsApp('YouTube Thumbnail', 'Rs. 500')" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-bold text-sm transition-colors cursor-pointer flex items-center justify-center gap-1.5">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>Order on WhatsApp</span>
+                    </button>
+                </div>
+
+                <!-- Package 2: Social Media Post -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all shadow-lg">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
+                            <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Social Media Post</h3>
+                        <p class="text-slate-400 text-xs mt-1.5">Instagram, Facebook ya WhatsApp page ke liye clean post.</p>
+                        
+                        <div class="my-5 pb-5 border-b border-slate-800">
+                            <span class="text-3xl font-extrabold text-white">Rs. 600</span>
+                            <span class="text-slate-400 text-xs"> / post</span>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Square / Story Size Ready
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Clean & Modern Layout
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Preview Sample Before Payment
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="orderOnWhatsApp('Social Media Post', 'Rs. 600')" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-bold text-sm transition-colors cursor-pointer flex items-center justify-center gap-1.5">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>Order on WhatsApp</span>
+                    </button>
+                </div>
+
+                <!-- Package 3: Simple Logo -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all shadow-lg">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-4">
+                            <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Simple Logo</h3>
+                        <p class="text-slate-400 text-xs mt-1.5">Aapke YouTube channel, brand, ya page ke liye minimalist logo.</p>
+                        
+                        <div class="my-5 pb-5 border-b border-slate-800">
+                            <span class="text-3xl font-extrabold text-white">Rs. 900</span>
+                            <span class="text-slate-400 text-xs"> / logo</span>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Clean & Minimalist Identity
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                High-Res PNG File
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Preview Sample Before Payment
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="orderOnWhatsApp('Simple Logo', 'Rs. 900')" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-bold text-sm transition-colors cursor-pointer flex items-center justify-center gap-1.5">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>Order on WhatsApp</span>
+                    </button>
+                </div>
+
+                <!-- Package 4: Starter Pack (Best Value) -->
+                <div class="relative bg-slate-900 border-2 border-emerald-500 rounded-2xl p-6 flex flex-col justify-between shadow-2xl shadow-emerald-950/40">
+                    <!-- Popular Badge -->
+                    <div class="absolute -top-3.5 right-5 px-3 py-0.5 rounded-full bg-gradient-to-r from-emerald-400 to-indigo-400 text-slate-950 text-[11px] font-extrabold uppercase tracking-wide">
+                        Best Value
+                    </div>
+
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-4">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Starter Pack</h3>
+                        <p class="text-slate-400 text-xs mt-1.5">Naye creators aur pages ke liye complete starter bundle.</p>
+                        
+                        <div class="my-5 pb-5 border-b border-slate-800">
+                            <span class="text-3xl font-extrabold text-white">Rs. 1,400</span>
+                            <span class="text-slate-400 text-xs"> / bundle</span>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Thumbnail + Post + Logo Combo
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Consistent Color Theme
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                Preview Sample Before Payment
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="orderOnWhatsApp('Starter Pack', 'Rs. 1,400')" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/25 transition-colors cursor-pointer flex items-center justify-center gap-1.5">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>Order on WhatsApp</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SAMPLE PORTFOLIO SECTION (WITH WATERMARK) ==================== -->
+    <section id="portfolio" class="py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Sample Showcase</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Design Samples &amp; Preview Proof</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Har sample par <strong class="text-slate-200">"preview" watermark</strong> hota hai taake client proof mehfooz rahe. Payment ke baad final saaf file milti hai.
+                </p>
+            </div>
+
+            <!-- 3 Portfolio Preview Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+                <!-- Sample Card 1: Gaming / Tech Thumbnail -->
+                <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all">
+                    <!-- Visual Mockup Area with Diagonal Watermark -->
+                    <div class="relative aspect-video bg-gradient-to-br from-indigo-900 via-slate-900 to-purple-950 p-5 flex flex-col justify-between overflow-hidden select-none">
+                        <!-- Mockup Content -->
+                        <div class="flex justify-between items-start z-10">
+                            <span class="px-2.5 py-0.5 rounded bg-red-600 text-white text-[10px] font-extrabold uppercase tracking-wider">VIRAL EDIT</span>
+                            <span class="text-xs font-bold text-amber-400 bg-slate-950/70 px-2 py-0.5 rounded">1080P HD</span>
+                        </div>
+                        <div class="z-10 my-auto">
+                            <p class="text-xs uppercase tracking-widest text-indigo-300 font-semibold">Tech & Gaming</p>
+                            <h4 class="text-xl sm:text-2xl font-black text-white leading-tight drop-shadow">
+                                HOW I BUILT THIS <span class="text-emerald-400">PRO SETUP!</span>
+                            </h4>
+                        </div>
+                        <div class="flex items-center gap-2 z-10 text-[11px] text-slate-300">
+                            <span class="w-5 h-5 rounded-full bg-indigo-500 inline-block"></span>
+                            <span>High-Contrast Thumbnail Style</span>
+                        </div>
+
+                        <!-- Diagonal Watermark Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-20 overflow-hidden">
+                            <div class="-rotate-24 border-2 border-white/25 bg-slate-950/30 backdrop-blur-[1px] px-8 py-1.5 text-white/40 font-black text-xl sm:text-2xl tracking-[0.25em] uppercase">
+                                PREVIEW
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-bold text-white">YouTube Thumbnail Style</h3>
+                            <span class="text-xs font-medium text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-lg">Thumbnail</span>
+                        </div>
+                        <p class="text-slate-400 text-xs mt-2">Bright text, clean cutout, aur strong background glow jo mobile screen par door se chamke.</p>
+                    </div>
+                </div>
+
+                <!-- Sample Card 2: Instagram Promo Post -->
+                <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all">
+                    <!-- Visual Mockup Area with Diagonal Watermark -->
+                    <div class="relative aspect-video bg-gradient-to-tr from-emerald-950 via-slate-900 to-teal-900 p-5 flex flex-col justify-between overflow-hidden select-none">
+                        <!-- Mockup Content -->
+                        <div class="flex justify-between items-center z-10">
+                            <span class="text-xs font-bold text-emerald-300 tracking-wide">@YOURBRAND</span>
+                            <span class="px-2 py-0.5 rounded-full bg-emerald-400 text-slate-950 text-[10px] font-extrabold">50% OFF</span>
+                        </div>
+                        <div class="z-10 my-auto text-center">
+                            <h4 class="text-xl font-extrabold text-white tracking-tight">NEW COLLECTION</h4>
+                            <p class="text-xs text-emerald-200/80 mt-1">Modern Minimalist Social Post</p>
+                        </div>
+                        <div class="z-10 flex justify-center">
+                            <span class="px-3 py-1 rounded-full bg-white/10 text-white text-[10px] font-semibold">Swipe to Explore →</span>
+                        </div>
+
+                        <!-- Diagonal Watermark Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-20 overflow-hidden">
+                            <div class="-rotate-24 border-2 border-white/25 bg-slate-950/30 backdrop-blur-[1px] px-8 py-1.5 text-white/40 font-black text-xl sm:text-2xl tracking-[0.25em] uppercase">
+                                PREVIEW
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-bold text-white">Instagram Promo Banner</h3>
+                            <span class="text-xs font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Social Post</span>
+                        </div>
+                        <p class="text-slate-400 text-xs mt-2">Online stores, coaches, aur pages ke liye clean layout aur clear call-to-action design.</p>
+                    </div>
+                </div>
+
+                <!-- Sample Card 3: Minimalist Logo / Study Deck -->
+                <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all">
+                    <!-- Visual Mockup Area with Diagonal Watermark -->
+                    <div class="relative aspect-video bg-gradient-to-bl from-slate-800 via-slate-900 to-indigo-950 p-5 flex flex-col justify-between overflow-hidden select-none">
+                        <!-- Mockup Content -->
+                        <div class="flex justify-between items-center z-10">
+                            <span class="text-[10px] uppercase tracking-widest text-slate-400">Brand Identity</span>
+                            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+                        </div>
+                        <div class="z-10 my-auto flex items-center justify-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-emerald-400 flex items-center justify-center text-slate-950 font-black text-xl">
+                                N
+                            </div>
+                            <div>
+                                <div class="text-lg font-extrabold text-white tracking-tight leading-none">NEXA LABS</div>
+                                <div class="text-[10px] text-slate-400 tracking-widest uppercase mt-1">Creative Studio</div>
+                            </div>
+                        </div>
+                        <div class="z-10 text-[10px] text-slate-400 text-center">
+                            Clean Vector-Style Monogram & Slide Theme
+                        </div>
+
+                        <!-- Diagonal Watermark Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-20 overflow-hidden">
+                            <div class="-rotate-24 border-2 border-white/25 bg-slate-950/30 backdrop-blur-[1px] px-8 py-1.5 text-white/40 font-black text-xl sm:text-2xl tracking-[0.25em] uppercase">
+                                PREVIEW
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-bold text-white">Modern Logo &amp; Slides</h3>
+                            <span class="text-xs font-medium text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-lg">Branding</span>
+                        </div>
+                        <p class="text-slate-400 text-xs mt-2">Aapke channel, startup, ya school/college presentation ke liye neat aur professional visuals.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS (3 STEPS) ==================== -->
+    <section id="how-it-works" class="py-16 sm:py-24 bg-slate-900/40 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Easy Process</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">How It Works</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Sirf 3 aasan steps mein apna design tayar karwayein.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-indigo-600 text-white font-extrabold text-lg flex items-center justify-center mx-auto mb-4 shadow-lg shadow-indigo-600/30">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Order &amp; Preview with "preview" Watermark</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        WhatsApp par apna order dein aur design banne ke baad <strong class="text-slate-200">"preview"</strong> watermark sample review karein.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-indigo-600 text-white font-extrabold text-lg flex items-center justify-center mx-auto mb-4 shadow-lg shadow-indigo-600/30">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Pay via EasyPaisa/JazzCash Through Parents</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Preview pasand aane par parents ke zariye <strong class="text-slate-200">EasyPaisa ya JazzCash</strong> par payment complete karein.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500 text-slate-950 font-extrabold text-lg flex items-center justify-center mx-auto mb-4 shadow-lg shadow-emerald-500/30">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Get Clean Final File</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Payment confirm hotay hi bina watermark wali <strong class="text-slate-200">clean final file</strong> hasil karein.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Banner CTA -->
+            <div class="mt-14 rounded-2xl bg-gradient-to-r from-indigo-900/60 via-slate-900 to-emerald-900/40 border border-indigo-500/30 p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 mb-1.5">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>Open 12 Hours Daily • WhatsApp: +92 336 0329814</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white">Ready to place your order?</h3>
+                    <p class="text-slate-300 text-sm mt-1">Apni pasand ka package chunein aur seedha WhatsApp par rabta karein.</p>
+                </div>
+                <a href="https://wa.me/923360329814?text=Salam%20Affan%20Studio!%20Mujhe%20design%20order%20karna%20hai." target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/20 transition-all active:scale-95 cursor-pointer shrink-0 flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Order on WhatsApp (+92 336 0329814)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="py-8 pb-24 sm:pb-8 border-t border-slate-800/80 text-xs sm:text-sm text-slate-400">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <span class="font-bold text-slate-200">Affan Studio</span>
+                <span>•</span>
+                <span>Open 12 Hours Daily</span>
+                <span>•</span>
+                <a href="https://wa.me/923360329814" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-medium transition-colors">
+                    WhatsApp: +92 336 0329814
+                </a>
+            </div>
+            <p class="text-slate-500">© <span id="year"></span> Affan Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="https://wa.me/923360329814?text=Salam%20Affan%20Studio!%20Mujhe%20design%20ke%20baare%20mein%20poochhna%20hai." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp +92 336 0329814" class="fixed bottom-5 right-5 z-50 flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm shadow-2xl shadow-emerald-500/40 transition-transform hover:scale-105 active:scale-95 cursor-pointer">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span class="hidden sm:inline">WhatsApp: +92 336 0329814</span>
+    </a>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        const WHATSAPP_NUMBER = "923360329814";
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Direct WhatsApp redirect with pre-filled service and PKR price message
+        function orderOnWhatsApp(packageName, priceLabel) {
+            const message = `Salam Affan Studio! Mujhe *${packageName}* (${priceLabel}) order karna hai. Hum 12 hours daily open schedule ke mutabiq details share kar raha hoon.`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
